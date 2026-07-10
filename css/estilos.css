@@ -1,0 +1,153 @@
+/* ================= LIMPIO LOS ESPACIOS POR DEFECTO ==================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* ================= BODY ==================== */
+
+body {
+
+    background-image: url("../img/fondo.png");
+
+    background-size: auto; /*Mantengo el tamaño para que el patrón se vea nítido*/
+    background-repeat: repeat; /*Repito la imagen para no perder la calidad*/
+    background-attachment: fixed;
+    background-position: center;
+
+    display: flex;  
+    justify-content: center; /*Centro horizontalmente*/
+    align-items: center; /*Centro verticalmente*/
+
+    padding: 2rem;
+
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* ================= DIV (bloque contenedor con máximo de ancho) ==================== */
+
+.contenedor {
+
+    width: 100%;
+    max-width: 75rem;
+
+    background-color: rgba(255, 255, 255, 0.941);
+
+    padding: 2rem;
+}
+
+
+
+/* ================= HEADER Y FOOTER ==================== */
+
+header, footer {
+
+    background-color: rgb(40, 70, 90);
+    padding: 1.5rem;
+    text-align: center;
+    color: rgb(217, 115, 149);
+}
+
+
+.headertitulo {
+
+    font-family: 'Barlow';
+    font-weight: bold;
+    color: white;
+    padding-bottom: 0.1rem;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    padding-bottom: 0.2rem;
+}
+
+address a {
+    text-decoration: none;
+    font-weight: bold;    
+    color: rgb(255, 255, 255);
+}
+
+address a:hover {
+    color: rgb(255, 158, 31);
+}
+
+/* ================= NAV ==================== */
+
+nav ul {
+
+    list-style: none;
+    display: flex; /*Coloco los items en horizontal*/
+    justify-content: center; /*Centro los elementos*/
+    gap: 3rem; /*Separación entre links*/
+    background-color: rgb(230, 230, 230);
+    padding: 1rem;
+}
+
+
+nav a {
+
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(40, 70, 90);
+}
+
+
+nav a:hover {
+    color: rgb(255, 158, 31);
+}
+
+
+
+/* ================= MAIN Y SECCIONES (títulos, párrafos y blockquote) ==================== */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;      /*separo las secciones*/
+}
+
+section {
+    background-color: rgba(255,255,255,0.7);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+section h2 {
+
+    font-family: 'Barlow';
+    font-weight: bold;
+    background-color: rgb(197, 104, 135);
+    color: rgb(241, 225, 201);
+    display: inline-block;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+
+section p {
+
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+
+blockquote {
+    background-color: rgb(241, 225, 201);
+    color: rgb(197, 104, 135);
+    border-left: 0.5rem solid rgb(197, 104, 135);    /*línea decorativa*/
+    font-style: italic;
+
+    padding: 1.5rem;
+    margin-top: 1rem;
+    line-height: 1.6; /*aca no le pongo unidad de medida para que el espacio se adapate al tamaño de la letra*/
+}
+
