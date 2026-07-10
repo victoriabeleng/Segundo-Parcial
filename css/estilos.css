@@ -21,7 +21,6 @@ body {
 
     display: flex;  
     justify-content: center; /*Centro horizontalmente*/
-    align-items: center; /*Centro verticalmente*/
 
     padding: 2rem;
 
@@ -51,7 +50,7 @@ header, footer {
     background-color: rgb(40, 70, 90);
     padding: 1.5rem;
     text-align: center;
-    color: rgb(217, 115, 149);
+    color: rgb(203, 198, 189);
 }
 
 
@@ -78,6 +77,9 @@ address a {
 address a:hover {
     color: rgb(255, 158, 31);
 }
+
+
+
 
 /* ================= NAV ==================== */
 
@@ -114,13 +116,14 @@ main {
     gap: 2rem;      /*separo las secciones*/
 }
 
+
 section {
     background-color: rgba(255,255,255,0.7);
     padding: 1.5rem;
     border-radius: 1rem;
 }
 
-section h2 {
+section h2, article h2 {
 
     font-family: 'Barlow';
     font-weight: bold;
@@ -129,25 +132,129 @@ section h2 {
     display: inline-block;
     border-radius: 1rem;
     padding: 0.5rem 1rem;
-}
-
-
-section p {
-
-    font-size: 1.1rem;
-    line-height: 1.6;
+    margin-bottom: 1rem;
     margin-top: 1rem;
 }
 
 
+section p, article p {
+
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+
 blockquote {
-    background-color: rgb(241, 225, 201);
+    background-color: rgb(203, 198, 189);
     color: rgb(197, 104, 135);
     border-left: 0.5rem solid rgb(197, 104, 135);    /*línea decorativa*/
     font-style: italic;
 
     padding: 1.5rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     line-height: 1.6; /*aca no le pongo unidad de medida para que el espacio se adapate al tamaño de la letra*/
 }
 
+
+
+/* ================= LAYOUT PAGINA OBRAS (para que quede chiquitito el aside) ==================== */
+
+.layout {
+
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+
+}
+
+.columnas {
+    display: flex;
+}
+
+.columnas article {
+
+    width:75%;
+}
+
+
+.layout aside {
+
+    width:25%;
+
+}
+
+
+
+/* ================= IMAGENES ==================== */
+
+.imagengrande {
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.imagen {
+    
+    margin-top:1rem;
+    margin-bottom: 1rem;
+    width: auto;
+    border-radius:1rem;
+
+}
+
+.imagenmediana {
+    display: block;
+    width: 100%;
+    max-width: 60%;
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+
+
+/* ================= VIDEOS ==================== */
+
+iframe {
+
+    width:100%;
+    height:30rem;
+    border-radius:1rem;
+    margin-top:2rem;
+
+}
+
+
+/* ================= ARTICLE Y ASIDE ==================== */
+
+aside {
+
+    background-color:rgba(241,225,201,0.7);
+    padding:1.5rem;
+    border-radius:1rem;
+
+}
+
+aside h3 {
+
+    margin-top:1.5rem;
+    font-family: 'Barlow';
+
+}
+
+
+/* ================= LISTAS ==================== */
+
+aside ul {
+
+    margin-top:1rem;
+    padding-left:2rem;
+
+}
+
+
+aside li {
+
+    margin-bottom:0.5rem;
+
+}
