@@ -45,7 +45,7 @@ let obras = [
 let galeria = document.querySelector("#galeria");
 
 
-//recorro el array y modifico el html desde js
+//Recorro el array y modifico el HTML desde JS. Directamente reemplazo el html sobre el elemento del array sobre el que estemos parados en el for.
 
 for (let i = 0; i < obras.length; i++) {
 

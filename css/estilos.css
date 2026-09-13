@@ -214,6 +214,13 @@ main.index section {
 
 /* ================= IMAGENES ==================== */
 
+/* Asi no se me desbordan las imagenes*/
+
+.columnas article img, .layout article img {
+    max-width: 100%;
+    height: auto;
+}
+
 .imagengrande {
     width: 100%;
     border-radius: 1rem;
@@ -270,7 +277,7 @@ aside h3 {
 }
 
 
-/* ================= LISTAS ==================== */
+/* ================= LISTAS aside ==================== */
 
 aside ul {
 
@@ -285,4 +292,163 @@ aside li {
 
     margin-bottom:0.5rem;
 
+}
+
+
+/* ================= FORMULARIOS Y RESULTADOS ==================== */
+
+/* Ajusto el form a las columnas */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/*Clase simulador*/
+
+.simulador h3 {
+    color: rgb(197, 104, 135);
+}
+
+.simulador hr {
+    color: rgb(82, 79, 74)
+}
+
+/*Clase instrucciones */
+
+.instrucciones {
+   
+    margin: 1rem;
+}
+
+.instrucciones li {
+    margin-left: 2rem;
+    color: rgb(82, 79, 74);
+    margin-bottom: 1rem;
+}
+
+.instrucciones h3 {
+    color: rgb(82, 79, 74);
+}
+
+
+
+/* Fieldset habilitado/deshabilitado */
+
+fieldset {
+    border: 0.15rem solid rgb(197, 104, 135);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+fieldset[disabled] {
+    opacity: 0.4;
+    border-color: rgb(203, 198, 189);
+    cursor: not-allowed;
+}
+
+
+
+/* Título de los grupos */
+
+legend {
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    color: rgb(40, 70, 90);
+    padding: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+
+
+/* Etiquetas */
+
+label {
+    font-weight: bold;
+    color: rgb(40, 70, 90);
+    font-size: 1rem;
+}
+
+
+
+/* Inputs */
+
+input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 0.15rem solid rgb(203, 198, 189);
+    border-radius: 0.5rem;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: rgb(40, 70, 90);
+    outline: none;   /*ningún borde por defecto*/
+    margin-top: 0.3rem;
+}
+
+input:focus {
+    border-color: rgb(255, 158, 31);   /*Resalta el borde del input seleccionado*/
+}
+
+/* Botones */
+
+form button, #btnReiniciar {
+    background-color: rgb(255, 158, 31);
+    color: rgb(197, 104, 135);
+    padding: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    border: 0.15rem solid rgb(255, 158, 31);
+    border-radius: 1rem;
+    cursor: pointer;   /*Cambia el cursor al posicionarse encima del botón*/
+    align-self: flex-start;
+}
+
+form button:hover:not(:disabled), #btnReiniciar:hover:not(:disabled) {   /*mientras el botón no este deshabilitado, activar el hover*/
+    color: rgb(40, 70, 90);
+}
+
+form button:disabled, #btnReiniciar:disabled {
+    background-color: rgb(203, 198, 189);
+    border-color: rgb(203, 198, 189);
+    color: rgb(255, 255, 255);
+    cursor: not-allowed;
+}
+
+
+
+/* Resultados container */
+
+#salidaResultados {
+    background-color: rgba(241, 225, 201, 0.7);
+    border-left: 0.5rem solid rgb(197, 104, 135);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    color: rgb(40, 70, 90);
+}
+
+#salidaResultados p {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: Arial, sans-serif;
+}
+
+#salidaResultados ul {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+#salidaResultados li {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0.3rem;
 }

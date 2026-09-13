@@ -29,7 +29,7 @@ let datosCuriosos = [
 
 
 
-//Capturo los elementos necesarios (El párrafo y el botón) y agrego el evento a realizar del botón.
+//Capturo los elementos necesarios (El párrafo donde irá el dato y el botón) y agrego el evento a realizar del botón.
 
 let datoCurioso = document.querySelector("#datoCurioso");
 

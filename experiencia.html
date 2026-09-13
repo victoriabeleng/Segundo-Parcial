@@ -106,26 +106,108 @@
             </section>
             
 
-            <!--=======Abro sección para la resolución del ejercicio-->
+
+
+            <!--ABRO SECCIÓN PARA LA RESOLUCIÓN DEL EJERCICIO-->
 
             <section class="simulador">
 
+                <h2>Gestión del respositorio digital de obras de Anderson</h2>
+    
+                <!-- Indicaciones de para el usuario -->
 
+                <div class="instrucciones">
+
+                    <h3>Indicaciones para el usuario:</h3>
+
+                    <br>
+
+                    <ol>
+                        <li>Ingrese la cantidad de obras a cargar y los valores globales de almacenamiento.</li>
+                        <li>Haga clic en <strong>"Iniciar Carga"</strong> para habilitar el registro de las obras.</li>
+                        <li>Complete los datos de cada obra hasta finalizar la cantidad establecida.</li>
+                        <li>Al completar la carga, el sistema calculará los resultados y habilitará el botón de <strong>"Reiniciar"</strong>.</li>
+                    </ol>
+
+                </div>
+                
+                <!--======== Primer Formulario =========-->
+
+                <form id="formConfiguracion">
+
+                    <h3>1. Configuración del repositorio</h3>
+
+                    <label for="cantObras">Cantidad total de obras a ingresar:</label>
+                    <input type="number" id="cantObras" min="1" placeholder="Ej: 3" required>
+
+                    <label for="tiempoTransferencia">Tiempo de transferencia (ms por MB):</label>
+                    <input type="number" id="tiempoTransferencia" min="1" placeholder="Ej: 150" required>
+
+                    <label for="costoAlmacenamiento">Costo mensual de almacenamiento ($ por MB):</label>
+                    <input type="number" id="costoAlmacenamiento" step="0.01" min="0.01" placeholder="Ej: 0.50" required>
+
+                    <button type="button" id="btnIniciarCarga">Iniciar Carga</button>
+
+                </form>
+
+
+
+                <hr>
+
+
+                <!--======== Segundo formulario ==========-->
+
+                <form id="formCargaObra">
+
+                    <h3 id="tituloCarga">2. Carga de Obras </h3>
+
+                    <fieldset id="Carga" disabled>  <!-- fieldset deshabilita todo el form hasta que pueda completarse -->
+
+                        <label for="nombreObra">Nombre de la obra:</label>
+                        <input type="text" id="nombreObra" placeholder="Ej: O Superman">
+
+                        <label for="duracionObra">Duración (en minutos):</label>
+                        <input type="number" id="duracionObra" step="0.1" min="0.1" placeholder="Ej: 8.3">
+
+                        <label for="pesoObra">Peso del archivo (en MB):</label>
+                        <input type="number" id="pesoObra" step="0.1" min="0.1" placeholder="Ej: 15">
+
+                        <button type="button" id="btnGuardarObra">Guardar Obra</button>
+
+                    </fieldset>
+
+                </form>
+
+
+                <!-- =========== Resultados estadísticos ==============-->
+
+                <div id="Resultados">
+                    <h3>3. Resultados del análisis</h3>
+                    
+                    <div id="salidaResultados">
+                        <p>Complete la carga de datos para acceder a las estadísticas.</p>
+                    </div>
+
+                    <button type="button" id="btnReiniciar" disabled>Reiniciar sistema</button>
+                </div>
 
             </section>
 
 
+        
             <!--SECCION A AGREGAR FUNCIONALIDAD CON JAVASCRIPT :)-->
+
             <section>
 
                 <h2>¿Sabías que...?</h2>
 
-                <p id="datoCurioso"> Acá va el dato curioso </p>
+                <p id="datoCurioso"> Presiona el botón abajo y descubrí el dato curioso! </p>
 
                 <button id="botonDato"> Descubrir dato curioso </button>
 
             </section>
-            <!--CIERRE DE SECCION A REVISAR -->
+
+            <!--CIERRE DE SECCION-->
             
             </main>
 
