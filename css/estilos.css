@@ -216,7 +216,8 @@ main.index section {
 
 /* Asi no se me desbordan las imagenes*/
 
-.columnas article img, .layout article img {
+#galeria img, 
+.galeria img {
     max-width: 100%;
     height: auto;
 }
