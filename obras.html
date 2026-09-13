@@ -3,11 +3,11 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Rafael Lozano-Hemmer | Obras</title>
+        <title>Laurie Anderson | Obras</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     
         <link href="css/estilos.css" rel="stylesheet">
     </head>
@@ -16,14 +16,14 @@
 
         <div class="contenedor"> <!--Abro contenedor general del sitio-->
 
-
+            
             <!--Header + Menú de navegación -->
 
             <header>
 
-                <h1 class="headertitulo">Rafael Lozano-Hemmer</h1>
+                <h1 class="headertitulo">Laurie Anderson</h1>
 
-                <p>Interactividad, espacio público y arte tecnológico</p>
+                <p>Performance, tecnología y narración en el arte contemporáneo</p>
 
             </header>
 
@@ -45,29 +45,40 @@
 
             <main class="layout">
 
-            <img class="imagengrande" src="img/lozano-hemmer-7.jpg" alt="Imagen de la obra Body Movies de Rafael Lozano">
+           <img class="imagengrande" src="img/anderson-4.jpeg" alt="Imagen de la obra de Laurie Anderson">
 
                 <div class="columnas">
             
                 <article>
 
-                    <h2>Sistemas interactivos y tecnología en tiempo real</h2>
+                    <h2>Tecnología, narrativa y experimentación</h2>
                     
                     <p>
-                        El trabajo de Rafael Lozano-Hemmer se basa en el desarrollo de sistemas tecnológicos que reaccionan a la presencia humana.
+                        El trabajo de Laurie Anderson se caracteriza por la integración de tecnologías en sus procesos creativos, no como un fin en sí mismo, sino como una herramienta para expandir el lenguaje artístico. 
                     </p>
                    
                     <p>
-                        Utiliza dispositivos como cámaras, micrófonos y sensores biométricos para captar información del entorno y transformarla en respuestas visuales o sonoras.
+                        Utiliza dispositivos electrónicos, procesamiento de voz y medios audiovisuales para construir experiencias que combinan relato y experimentación.
                     </p>
 
                     <p>
-                        Estas obras funcionan en tiempo real, generando una relación directa entre acción y resultado.
+                        Sus obras suelen desarrollarse como narraciones fragmentadas, donde la voz guía al espectador a través de historias que mezclan lo personal, lo político y lo ficticio. Este enfoque permite explorar nuevas formas de contar, donde la estructura no es lineal y la interpretación queda abierta.
                     </p>
                 
-                        <img class="imagen" src="img/lozano-hemmer-2.jpg" alt="Instalación interactiva de Rafael Lozano">
-                        <img class="imagen" src="img/lozano-hemmer-3.jpg" alt="Instalación interactiva de Rafael Lozano">
-                        <img class="imagen" src="img/lozano-hemmer-1.jpg" alt="Instalación interactiva de Rafael Lozano">
+                        <img class="imagen" src="img/anderson-1.jpg" alt="Obra multimedial Laurie Anderson">
+                        <img class="imagen" src="img/anderson-2.jpg" alt="Obra multimedial Laurie Anderson">
+                        <img class="imagen" src="img/anderson-3.jpg" alt="Obra multimedial Laurie Anderson">
+                        <img class="imagen" src="img/anderson-8.jpg" alt="Obra multimedial Laurie Anderson">
+
+                    
+                    <section id="galeria-interactiva">
+                    
+                        <h2>Galería Interactiva</h2>  <!--Dejo el div vacío porque la voy a generar con JS-->   
+                        <button id="cambiarGaleria" type="button" onclick="cambiarGaleria()">Cambiar diseño de la galería</button>
+                        
+                        <div id="galeria"></div>
+                        
+                    </section>
 
                 </article>       
 
@@ -79,33 +90,25 @@
                         <h3>Obras destacadas</h3>
 
                         <ul>
-                            <li>Pulse Room</li>
-                            <li>Vectorial Elevation</li>
-                            <li>33 Questions per Minute</li>
-                            <li>Body Movies</li>
+                            <li>O Superman</li>
+                            <li>United States Live</li>
+                            <li>Big Science</li>
                         </ul>
 
 
                         <h3>Conceptos principales</h3>
 
                         <ul>
-                            <li>Interactividad</li>
-                            <li>Arte en espacio público</li>
+                            <li>Lenguaje y narrativa</li>
+                            <li>Performance multimedia</li>
+                            <li>Manipulación de la voz</li>
                         </ul>
 
                     </article> 
                 </aside>
 
+
                 </div> <!--Cierro el div de columnas-->
-
-
-                <section class="galeria-interactiva">
-                    
-                    <h2>Galería Interactiva</h2>                
-                    <div id="galeria"></div>
-
-                </section>
-
 
             </main>
 
@@ -118,11 +121,11 @@
             <footer>
             
             <p>
-                Rafael Lozano-Hemmer
+                Laurie Anderson
             </p>
 
             <address>
-               <p>Contacto: <a href="mailto:rafael@artedigital.com">rafael@artedigital.com</a> </p> 
+               <p>Para contactarse escribir a: <a href="mailto:rafael@artedigital.com">laurie@artedigital.com</a> </p> 
             </address>
 
             </footer>
@@ -132,5 +135,6 @@
 
         </div> <!--Cierro contenedor general del sitio-->
 
+        <script src="js/script.js"></script>
     </body>
 </html>

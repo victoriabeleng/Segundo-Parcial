@@ -56,7 +56,7 @@ header, footer {
 
 .headertitulo {
 
-    font-family: 'Barlow';
+    font-family: 'Abel';
     font-weight: bold;
     color: white;
     padding-bottom: 0.1rem;
@@ -125,7 +125,7 @@ section {
 
 section h2, article h2 {
 
-    font-family: 'Barlow';
+    font-family: 'Abel';
     font-weight: bold;
     background-color: rgb(197, 104, 135);
     color: rgb(241, 225, 201);
@@ -159,6 +159,19 @@ blockquote {
 
 
 
+/* ================= LAYOUT PAGINA DE INICIO ==================== */
+
+main.index { 
+    display: flex;
+    flex-direction: row; 
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+main.index section {
+    flex: 1;
+}
+
 /* ================= LAYOUT PAGINA OBRAS (para que quede chiquitito el aside) ==================== */
 
 .layout {
@@ -182,10 +195,22 @@ blockquote {
 .layout aside {
 
     width:25%;
+    height: 50%;
 
 }
 
+/*=============== BOTON ==================*/
 
+#cambiarGaleria, #botonDato {
+    background-color: rgb(255, 158, 31);
+    color: rgb(197, 104, 135);
+    padding: 1rem;
+    margin: 1.5rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    border-color: rgb(255, 158, 31);
+    border-radius: 1rem;
+}
 
 /* ================= IMAGENES ==================== */
 
@@ -197,17 +222,17 @@ blockquote {
 
 .imagen {
     
-    margin-top:1rem;
-    margin-bottom: 1rem;
-    width: auto;
+
+    margin: 2rem;
+    max-width: 35%;
     border-radius:1rem;
+
 
 }
 
 .imagenmediana {
-    display: block;
+
     width: 100%;
-    max-width: 60%;
     margin: 1rem auto;
     border-radius: 1rem;
 }
@@ -218,7 +243,7 @@ blockquote {
 iframe {
 
     width:100%;
-    height:30rem;
+    height:auto;
     border-radius:1rem;
     margin-top:2rem;
 
@@ -232,13 +257,15 @@ aside {
     background-color:rgba(241,225,201,0.7);
     padding:1.5rem;
     border-radius:1rem;
+    color:rgb(197, 104, 135);
+    margin: 1rem;
 
 }
 
 aside h3 {
 
     margin-top:1.5rem;
-    font-family: 'Barlow';
+    font-family: 'Abel';
 
 }
 
@@ -248,7 +275,8 @@ aside h3 {
 aside ul {
 
     margin-top:1rem;
-    padding-left:2rem;
+    padding-left:3rem;
+    
 
 }
 
